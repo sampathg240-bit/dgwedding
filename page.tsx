@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import Image from "next/image";
 
 const WEDDING_DATE = new Date("2026-11-30T10:00:00+05:30");
 
@@ -159,6 +160,28 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </section>
+
+        <section className="portrait-section" aria-label="Gimhan and Disna">
+          <div className="portrait-copy">
+            <p className="section-kicker">Our favourite chapter</p>
+            <h2>Together is a beautiful place to be</h2>
+            <p>Two lives, one promise, and a lifetime of moments waiting to be written.</p>
+            <div className="portrait-signature">Gimhan <span>&amp;</span> Disna</div>
+          </div>
+          <figure className="portrait-frame">
+            <Image
+              className="portrait-image"
+              src="/couple.jpg"
+              alt="Gimhan and Disna"
+              width={1148}
+              height={2044}
+              sizes="(max-width: 820px) 88vw, 460px"
+              unoptimized
+            />
+            <span className="photo-sparkle photo-sparkle-one" aria-hidden="true">✦</span>
+            <span className="photo-sparkle photo-sparkle-two" aria-hidden="true">✦</span>
+          </figure>
         </section>
 
         <section className="details-section" id="details">

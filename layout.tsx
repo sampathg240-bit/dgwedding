@@ -5,12 +5,27 @@ import "./globals.css";
 const geist = Geist({ variable: "--font-geist", subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://dgwedding-two.vercel.app"),
   title: "Gimhan & Disna Wedding Invitation",
   description: "Join Gimhan and Disna as they celebrate their wedding on 30 November 2026 at Wasana Hotel, Akuressa.",
   openGraph: {
     title: "Gimhan & Disna — Save the Date",
     description: "30 November 2026 · Wasana Hotel, Akuressa",
     type: "website",
+    images: [
+      {
+        url: "/couple.jpg",
+        width: 1148,
+        height: 2044,
+        alt: "Gimhan and Disna",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gimhan & Disna — Save the Date",
+    description: "30 November 2026 · Wasana Hotel, Akuressa",
+    images: ["/couple.jpg"],
   },
   other: { "codex-preview": "development", "theme-color": "#180d19" },
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
